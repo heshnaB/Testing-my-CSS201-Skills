@@ -1,5 +1,7 @@
 
 
+
+
 body {
   font-family: Segoe UI,Helvetica Neue;
   font-weight:400;
@@ -53,6 +55,13 @@ body {
   .container {
         max-width: 960px;
     }
+
+  .both-card-blocks {
+    display: grid;
+    /* grid-template-columns: 41.8% 16.4% 41.8%; */
+    grid-template-columns: auto auto;
+    column-gap: 2%;
+  }
   
   
 }
@@ -65,6 +74,17 @@ body {
   .nav_btn {
     display: block; 
   }
+
+  .both-card-blocks {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+    
+  }
+
+
   
 }
 
@@ -274,19 +294,28 @@ a {
     border-color: #dae0e5
 }
 
-.both-card-blocks {
+/* .both-card-blocks {
   display: grid;
   grid-template-columns: 41.8% 16.4% 41.8%;
-  
-  
-}
-
+} */
 
 .card-block {
   border: 1px solid red;
   background-size: cover;
-  
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-link {
+  color: blueviolet;
 }
 
 
-
+.img-bk {
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-self: center;
+}
