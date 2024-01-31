@@ -90,6 +90,11 @@ body {
     padding: 50px;
     color: #FFFFFF;
   }
+
+  .imga {
+    width: 100%;
+    height: auto;
+  }
   
   
 }
@@ -107,26 +112,26 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    align-items: center;
+    
     row-gap: 5%;
     
   }
 
-  .text_onimage {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    align-items: center;    
-  }
+  
 
   .image_con {
-    position: relative;
+    /* position: relative; */
     padding: 20px;
     color: #FFFFFF;
     
   }
 
-
+  .basic {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   
 }
 
@@ -359,6 +364,8 @@ a {
   width: 100%;
   height: auto;
 }
+
+
 
 .text_onimage {
   padding-top: 100px;
