@@ -73,7 +73,18 @@ body {
     margin-left: -140px;
     margin-bottom: -30px;
     margin-top: 410px;
-    padding: 20px;
+  }
+  
+  .right-side .imga {
+    width: 150%;
+    margin-left: 320px;
+  }
+
+  .right-side .image_con {
+    margin-left: -600px;
+    margin-right: 450px;
+    margin-bottom: -30px;
+    margin-top: 410px;
   }  
   
 }
@@ -97,41 +108,31 @@ body {
   }
 
   .basic {
+    padding-top: 20%;
     display: grid;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
-    
-  }
-
-  .d-block {
-    position: relative;
-    overflow: hidden;
   }
 
   .imga {
-    max-width: 50%;
-    vertical-align: middle;
-    /* position: absolute; */
-    /* top: 0;
-    left: 10%;
-    transform: translateX(auto-fit); */
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: cover;
+    top: 0;
+    left: 50%;
+    
+  }
+
+  .image_con {
+    margin-top: -10px;
   }
 
   
 
-  /* .image_con {
-    position: relative;
-    padding: 20px;
-    color: #FFFFFF;
-    
-  }
-
-  .basic {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  } */
   
 }
 
@@ -303,8 +304,9 @@ a {
 }
 
 .col-1 {
-    position: absolute;
+    /* position: absolute; */
     justify-content: center;
+    align-items: center;
     top: 50%;
 }
 
@@ -341,6 +343,40 @@ a {
     border-color: #dae0e5
 }
 
+.bisque-btn {
+  background-color: bisque;
+  color: #212529;
+  border-color: #f8f9fa;
+}
+
+.bisque-btn:hover {
+  color: #212529;
+  text-decoration: none
+}
+
+.bisque-btn:hover {
+  color: #212529;
+  background-color: rgb(252, 212, 164);
+  border-color: #dae0e5
+}
+
+.cbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+  padding: .5rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-radius: 0;
+  width: 15%;
+  margin-left: 40%;
+  margin-top: -6%;
+  /* margin-left: 340px;
+  margin-right: 340px; */
+}
 
 .card-block {
   border: 1px solid rgb(126, 125, 125);
@@ -361,5 +397,8 @@ a {
   height: auto;
 }
 
+.image_con {
+  padding: 20px;
+}
 
 
