@@ -92,6 +92,11 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr) );
   }
 
+  .a_col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr) );
+  }
+
 }
 
 @media (max-width: 1280px) {
@@ -181,7 +186,7 @@ body {
 
 .navbar {
   position: relative;
-  padding: 37px 2rem ;
+  padding: 2rem;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -208,7 +213,7 @@ body {
 }
 
 .nav-link {
-  padding: .5rem 1rem;
+  padding: .5rem;
   font-family: Segoe UI;
   font-size: 20px;
   font-weight: 400;
@@ -233,17 +238,17 @@ a {
 
 .logo {
   display: inline-block;
-  padding-top: .28906rem;
-  padding-bottom: .28906rem;
+  padding-top: .25rem;
+  padding-bottom: .29rem;
   margin-right: 3rem;
-  font-size: 1.40625rem;
+  font-size: 1.4rem;
   line-height: inherit;
   white-space: nowrap
 }
 
 .nav_btn {
   padding-right: .25rem .75rem;
-  font-size:1.40625rem;
+  font-size:1.4rem;
   line-height:1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -333,8 +338,12 @@ a {
     font-size: 1.125rem;
     line-height: 1.5;
     border-radius: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
     text-transform: uppercase;
+}
+
+.btn: :hover {
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .white-btn {
@@ -345,13 +354,9 @@ a {
 
 .white-btn:hover {
     color: #212529;
-    text-decoration: none
-}
-
-.white-btn:hover {
-    color: #212529;
+    text-decoration: none;
     background-color: #e2e6ea;
-    border-color: #dae0e5
+    border-color: #dae0e5;
 }
 
 .bisque-btn {
@@ -375,7 +380,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   text-transform: uppercase;
   letter-spacing: 1.75px;
   padding: .5rem 1rem;
@@ -385,8 +389,10 @@ a {
   width: 15%;
   margin-left: 40%;
   margin-top: -6%;
-  /* margin-left: 340px;
-  margin-right: 340px; */
+}
+
+.cbtn {
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .card-block {
@@ -410,6 +416,19 @@ a {
 
 .image_con {
   padding: 20px;
+  background-image: url('https://raw.githubusercontent.com/heshnaB/image/main/wood.avif');
+}
+
+.image_con1 {
+  background-image: url('https://raw.githubusercontent.com/heshnaB/image/main/wood.avif');
+}
+
+.image_con2 {
+  background-image: url('https://raw.githubusercontent.com/heshnaB/image/main/wood.avif');
+}
+
+#image_co h3, p {
+  color: azure;
 }
 
 .review {
@@ -421,6 +440,15 @@ a {
 .pretty_green {
   text-align: center;
   padding: 20px;
+  background-color: #b1c258;
+}
+
+#pretty_g p{
+  padding-bottom: 5%;
+}
+
+#textr a {
+  color:#f8f9fa
 }
 
 .con {
